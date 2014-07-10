@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MongoDemoApp</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<% if user_signed_in? %>
+	Signed in as <%= current_user.name %>. Not you?
+		<li> <%= link_to('Edit registration', edit_user_registration_path) %>	</li>
+		<li> <%= link_to('Logout', destroy_user_session_path, :method => :delete) %> </li>
+		<li> <%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %> </li>
+	<% else %>
+		<li> <%= link_to('Login', new_user_session_path)  %> </li>
+		<li> <%= link_to('Register', new_user_registration_path)  %> </li>
+	<% end %>
+  <%= yield %>
+</body>
+</html>
