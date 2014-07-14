@@ -35,6 +35,10 @@ gem 'devise'
 gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
+gem 'globalize', '~> 4.0.2'
+gem 'twilio-ruby'
+#gem 'actionmailer'
+#gem 'sms-easy'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

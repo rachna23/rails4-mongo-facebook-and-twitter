@@ -15,8 +15,10 @@ class User
   field :reset_password_token,   type: String
   field :name,   type: String
   field :provider, type: String
+  field :language, type: String
   field :uid, type: String
   field :reset_password_sent_at, type: Time
+
 
   ## Rememberable
   field :remember_created_at, type: Time

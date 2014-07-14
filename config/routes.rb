@@ -29,6 +29,10 @@ MongoDemoApp::Application.routes.draw do
   #   end
 
   root to: "home#index"
+  match '/:locale' => 'home#index', via: :get
+  scope "(:locale)", :locale => /en|es|fr/ do
+   #resources :contact
+  end
 
 
   # Example resource route with sub-resources:

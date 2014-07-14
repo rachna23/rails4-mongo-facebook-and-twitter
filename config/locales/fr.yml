@@ -1,0 +1,20 @@
+fr:
+  welcome:
+    title: "fr-translation"
+    paragraph: "fr-translation."
+  products:
+    title: "Mauhwaa"
+    released: "Ruhhha"
+  flash:
+    login: "Wohooohaaa"
+  number:
+    format:
+      precision: 3
+      separator: '|'
+      delimiter: '-'
+    currency:
+      format:
+        unit: '$'
+        precision: 2
+        format: '%u%n'
+
