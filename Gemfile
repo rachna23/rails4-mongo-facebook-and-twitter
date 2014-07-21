@@ -37,6 +37,7 @@ gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 gem 'globalize', '~> 4.0.2'
 gem 'twilio-ruby'
+#gem 'tunnlr_connector', group: :development
 #gem 'actionmailer'
 #gem 'sms-easy'
 # Use ActiveModel has_secure_password

@@ -16,6 +16,7 @@ class User
   field :name,   type: String
   field :provider, type: String
   field :language, type: String
+  field :phone, type: String
   field :uid, type: String
   field :reset_password_sent_at, type: Time
 
